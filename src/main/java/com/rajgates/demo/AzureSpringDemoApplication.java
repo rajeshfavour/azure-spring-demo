@@ -11,7 +11,8 @@ public class AzureSpringDemoApplication {
 
 	@GetMapping("/message")
 	public String getMessage() {
-		return "This is my first spring azure test deployment";
+		return "This is my first spring azure test deployment \n"
+				+ "Testing CI is working fine";
 	}
 	public static void main(String[] args) {
 		SpringApplication.run(AzureSpringDemoApplication.class, args);
